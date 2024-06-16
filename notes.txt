@@ -1,0 +1,159 @@
+React:-
+*Open-Source JavaScript Library to build Dynamic and Interactive UI
+*Finally the Code that executes is JavaScipt itself
+*React provides pre-written code for commonly used things and functionalities
+*Single Page Application (SPA)
+
+DOM:-
+Document Object Model
+Browser creates DOM Structure(Tree Structure) using HTML file
+Then applies styling to elements using CSS file
+JS modifies DOM based on user actions and events
+
+Problems in JS:-
+React has simpler mental model
+DOM complexity in JS
+
+Working of React:-
+Provision for automatic querying and updating DOM elements
+Web page using small and reusable components
+
+JS is imperative(define steps to reach desired state)
+React is decalarative(define target UI state and react figures out how to reach it)
+
+*Components:-
+Resuable, Modular, Organised
+Kind of like template to resuse
+React is Tree of components like DOM is a Tree
+App is the root component
+
+GitHub Basics:-
+Creating Repository in GitHub and executing commands specified
+
+React Documentation:-
+react.dev
+
+React is a core Library.
+
+Attachments:-
+react-dom (for webs)
+react-native (for mobile apps)
+
+npx for directly executing packeges wihtout installation
+
+create-react-app, create is a utility, is very bulky, more package size.
+
+package.json is used to analyze any project
+dependencies: which libraries or packages we have
+scripts: start, build, test.....
+
+Create React Projects:-
+npx create-react-app nameofproject (not preferrable)
+cd nameofproject
+npm run start
+
+npm run build makes a folder named build which is the files served to user
+
+npm install:- Installs all required packages in the folder
+
+Using Vite:-
+npm create vite@latest
+npm run dev
+
+Main work done in src folder to make changes in the App
+npm run script [mentioned in package.json]
+
+To inject javascript or manipulate html, we need to include it.
+
+Which files into Git or not in gitignore file.
+
+Some dependencies are locked in package-lock.json.
+
+Readme is mardown file.
+
+In Public Folder:
+manifest.json used for mobile version.
+robots.txt for search engine.
+index.html is single page and all work done in it.
+
+DOM is a tree structure.
+React is the Core Foundational Library.
+React-DOM is the implementation of it on Web.
+
+In src folder:
+In index.js file, root variable stores DOM variable
+Browser has its own DOM, React creates its own DOM called Virtual DOM.
+
+Browser renders HTML.
+
+Vite is much more strict in terms of naming.
+We need to make files in .jsx for components or anything and in Uppercase (component name).
+Unlike in normal.
+
+Even in create react app version, you need to capitalize first word of components
+
+Best practice is to keep file name capitalised
+
+In create react app keep extension jsx or js doesn't matter
+
+Basic Convention is to keep jsx for ones which return HTML
+and js for only javascript code
+
+In HTML scripts are injected differently using either react scripts or manual addition in both ways
+In parallel to Browser DOM, React DOM is also created
+HTML is injected and removed in single HTML file of index.html
+The scripts are run using react and react-dom
+
+index.js and main.jsx is where the virtual DOM is created in normal and vite.
+
+React uses Bundler to make syntax like <MyApp /> etc....
+
+jsx: javascript + html
+
+function Component(){return (html code)}
+this html code is converted/parsed into object type code like in custom React file to make tree of html
+<App /> can also be written as App()
+
+
+Hooks used to update every instance of variable in UI
+
+Virtual DOM:
+createRoot creates DOM like structure and compares to main DOM and updates only the parts modified.
+unlike Browser that reloads entire DOM.
+Virtual DOM tracks changes in tree structure of DOM.
+Optimal Update, drop update requests if another update is on the way (for the same element).
+Fiber Algorithm used for updation.
+pause, resume, prioritize updates.
+
+Hydration Process: DOM elements unreactive before it, so javascipt injected.
+
+Reconciliation: Algorithm to diff one tree with another and conclude which parts to update.
+
+setState used to re-render.
+
+Reconciliation is behind Virtual DOM.
+
+Diffing of lists is done using keys.
+
+Abort prrevious updates if new update is on the way.
+
+Props makes components reusable.
+Substitute your wanted information to show in the component using props.
+
+[[..]] is hidden scope.
+
+const arr = [...]
+the inner elements could change though
+
+Integrate Tailwind in you project: Refer Documentation and begin.
+
+useCallback is a React Hook that lets us cache a function definition between re-renders.
+It is used to return a memoized callback function.
+This allows us to isolate resource intensive functions so that they will not automatically run on every render.
+The useCallback Hook only runs when one of its dependencies update.
+
+useEffect lets us synchronize component with external system
+
+useRef used to reference
+
+If we are not meaning to return any html and write only basic javascript code, then make .js file only
