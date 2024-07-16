@@ -159,3 +159,17 @@ useRef used to reference
 If we are not meaning to return any html and write only basic javascript code, then make .js file only
 
 React Router DOM is written by 3rd party developers
+npm install react-router-dom
+
+Link tag in jsx used instead of <a> tag of HTML
+since <a> tag refreshes entire page
+
+NavLink tag in jsx
+Either import individually or import all components in one jsx and finally export that jsx file to be able to import in the main.jsx
+
+loader in react-router: upon hover (before clicking icon), the api call starts fetching things even before useEffect dependency calls (whatever was meant to do)
+even uses cache to store those data
+
+We will refrain to use self closing tags if we want some branching inside it in react router method 2
+
+useLoaderData is a Hook
