@@ -173,3 +173,12 @@ even uses cache to store those data
 We will refrain to use self closing tags if we want some branching inside it in react router method 2
 
 useLoaderData is a Hook
+
+If nested components, then use of props becomes complicated since everytime we need to pass values, we need to pass it to each parent of that child where it is to be used
+This is Prop-Drilling
+Thus Context-API or Redux is used.
+Redux is for state management.
+Redux ToolKit (RTK).
+State Management.
+
+Using Tailwind, dark and light classes exist
