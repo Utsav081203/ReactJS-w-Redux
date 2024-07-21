@@ -182,3 +182,14 @@ Redux ToolKit (RTK).
 State Management.
 
 Using Tailwind, dark and light classes exist
+
+Functionality, Methods was written in App.jsx while using ContextApi
+
+...arr becomes the list of elements of that arr
+
+Local Storage in JavaScipt: Browser Local Storage/Session Storage.
+We need to convert into JSON from string here.
+
+JSON could also give us arrays through parsing.
+
+If the dependency array is kept empty ([]), the effect will only run once, after the initial render. This means the effect will be triggered when the component is first mounted.
