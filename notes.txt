@@ -193,3 +193,54 @@ We need to convert into JSON from string here.
 JSON could also give us arrays through parsing.
 
 If the dependency array is kept empty ([]), the effect will only run once, after the initial render. This means the effect will be triggered when the component is first mounted.
+
+Till now we explored: Components till now were based on functions, exported them after writin logic but class based components exist too!
+
+Redux:
+It is an independent state management Library.
+We get to use Redux in any stack/framework we want to use.
+In React, we use react-redux.
+
+Till now what Context API has been:
+Prop drilling where we need to pass prop values to the parents of component we want prop value in.
+So we set Global Context known Context API from which any component can have access to.
+
+Central Storage (Global Variable) is what we need
+Data Flow is not as strong in context as in redux.
+Data flow is to update the variables and extract the variables later for use.
+
+Reducers update data in Redux.
+State must be read only in Redux.
+Changes in data must be through functions and reducers only.
+Redux can be used for Vue, React,.....
+
+Redux Toolkit has more abstraction.
+
+rtk:
+Store is Single Source of Truth (Global Variable type).
+reducers change mini portions of store.
+react-redux:
+useSelector
+useDispatch: uses reducer to change store.
+
+npm install @redux/Toolkit
+npm install react-redux
+
+@reduxjs.toolkit is core redux library.
+
+Create Store:
+import configureStore method.
+export variable store which is instance of it.
+it takes object as parameter.
+
+Reducers are called slices in rtk.
+
+nanoid used to generate unique ids.
+
+when a function is defined (say named func),
+then func() calls it but func only references it.
+
+we always will have access to both state and action.
+state will have global variable values, but action will have values specific to a method.
+react-redux is for communication btw react and redux.
+To create slice, we need a name, initial state and list of reducers.
