@@ -244,3 +244,50 @@ we always will have access to both state and action.
 state will have global variable values, but action will have values specific to a method.
 react-redux is for communication btw react and redux.
 To create slice, we need a name, initial state and list of reducers.
+
+State change could lead to re renders.
+
+React/Frontend perspective must be to get data from api handling and display it to the user.
+
+Appwrite is Backend as a service. Open Source.
+TinyMCE used for text editor.
+html-react-parser.
+react hook forms.
+
+environment variables: critical information must should not be able to get extracted from source code and browser.
+such system variables are defined in .env
+
+we ourselves need system variables
+thus we make .env.sample
+
+environment variable file loads once.
+if file updated, we might need to restart Application.
+env file is defined in process.
+
+in cra, we need to define env variables using prefix of REACT_APP_.....
+and access is done using process.env._____
+
+in vite, VITE_ is prefix.
+and access is import.meta.env.___
+
+An .env.sample file is typically used in projects to provide a template of environment variables that need to be configured for the application to run properly. This file does not contain actual sensitive data like API keys or passwords but instead serves as a guide for developers to know what variables are needed.
+
+Indexes used for filtering.
+Indexing is done on an attribute.
+env variables must be in string form.
+
+better practice to export at once in js file where we parse all into strings.
+
+Concept of Vendor Locking.
+If we were to not continue one of our services from 3rd party organistion.
+then too the written logic could work.
+Services are made.
+
+In short we write services code where the inner working is still based on appwrite or 3rd party service we opt for.
+but when we desire to switch 3rd party service, we just need to re-write inner working not those classes/services and also no change outside that.
+Better Code Practice.
+Just read Documentation and place everything in the working code of services.
+This way there will be no change in frontend at all.
+The methods that frontend calls to get services and data is still the same.
+Just the under the hood logic changes in backend (logic of those methods).
+Abstraction for frontend.
