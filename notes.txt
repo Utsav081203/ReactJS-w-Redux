@@ -291,3 +291,21 @@ This way there will be no change in frontend at all.
 The methods that frontend calls to get services and data is still the same.
 Just the under the hood logic changes in backend (logic of those methods).
 Abstraction for frontend.
+
+From Redux Chrome Dev Tools, we know the state (values of it now), actions that took place through dispatch and all.
+
+Overview of Application:
+components have parts of web which are going to be assembled in main page.
+appwrite is related to Appwrite services, which provide backend functionalities like authentication and database access.
+auth.js: services for auth
+config.js: services for crud
+conf.js: configuration is centralized for appwrite
+store.js: global application state managed here
+authSlice.js: manages authentication with redux store
+
+login and logout is defined in both authSlice as well as auth.
+
+in authSlice, it defines a Redux action and reducer for managing authentication state in the Redux store.
+in auth, it provides a method to interact with the Appwrite backend to authenticate a user and create a session.
+
+basically, one is solely for state management and other is for actual session management and backend service.

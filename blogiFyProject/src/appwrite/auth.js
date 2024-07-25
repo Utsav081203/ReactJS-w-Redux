@@ -1,3 +1,5 @@
+// services based programming
+// services made for auth related things
 import conf from '../conf/conf.js';
 import { Client, Account, ID } from 'appwrite';
 
