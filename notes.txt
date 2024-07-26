@@ -309,3 +309,29 @@ in authSlice, it defines a Redux action and reducer for managing authentication 
 in auth, it provides a method to interact with the Appwrite backend to authenticate a user and create a session.
 
 basically, one is solely for state management and other is for actual session management and backend service.
+
+in React StrictMode, it renders twice.
+
+BlackBox API, is where we don't know behind the scenes how data is fetched but rather used as black box to get data.
+
+Edge cases and special real world edge cases need to be handled in API usage and creation.
+
+()() is iife
+ex:
+(function() {
+    //code to be executed immediately
+})();
+
+race condition:
+whenever input field changes, api call is made.
+numerous useless calls made thus.
+
+Debouncing, de throttling:
+we dont desire the output from old api calls
+just the last/most recent api call is meant to be responded
+
+Race condition : it focus only reply each API call Sequentially not cancelling unnecessary API calls
+
+Network chrome dev tool is used to see api calls 
+
+For a component to be mounted in ReactJS it means to be initialized and inserted in the DOM
